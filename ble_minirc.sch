@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11574,13 +11574,13 @@ http://www.jst-mfg.com&lt;p&gt;
 <attribute name="VALUE" x="88.9" y="146.05" size="1.778" layer="96"/>
 </instance>
 <instance part="VCC1" gate="G$1" x="109.22" y="198.12"/>
-<instance part="Q3" gate="G$1" x="205.74" y="165.1" rot="MR270"/>
-<instance part="GND1" gate="1" x="195.58" y="157.48"/>
-<instance part="AGND1" gate="VR1" x="218.44" y="157.48"/>
+<instance part="Q3" gate="G$1" x="190.5" y="241.3" rot="MR270"/>
+<instance part="GND1" gate="1" x="200.66" y="236.22" rot="MR0"/>
+<instance part="AGND1" gate="VR1" x="177.8" y="236.22" rot="MR0"/>
 <instance part="GND2" gate="1" x="106.68" y="137.16"/>
 <instance part="GND3" gate="1" x="157.48" y="152.4"/>
 <instance part="VCC4" gate="G$1" x="157.48" y="177.8"/>
-<instance part="R5" gate="G$1" x="205.74" y="180.34" rot="R90"/>
+<instance part="R5" gate="G$1" x="190.5" y="256.54" rot="MR90"/>
 <instance part="C1" gate="G$1" x="149.86" y="137.16"/>
 <instance part="C2" gate="G$1" x="160.02" y="137.16"/>
 <instance part="C3" gate="G$1" x="170.18" y="137.16"/>
@@ -11600,8 +11600,8 @@ http://www.jst-mfg.com&lt;p&gt;
 <instance part="C5" gate="G$1" x="287.02" y="259.08"/>
 <instance part="C6" gate="G$1" x="233.68" y="246.38"/>
 <instance part="GND10" gate="1" x="233.68" y="236.22"/>
-<instance part="U$2" gate="G$1" x="205.74" y="193.04"/>
-<instance part="U$3" gate="G$1" x="220.98" y="266.7"/>
+<instance part="U$2" gate="G$1" x="190.5" y="269.24" rot="MR0"/>
+<instance part="U$3" gate="G$1" x="220.98" y="271.78"/>
 <instance part="TP7" gate="G$1" x="429.26" y="76.2" rot="R270"/>
 <instance part="TP8" gate="G$1" x="429.26" y="63.5" rot="R270"/>
 <instance part="U1" gate="G$1" x="373.38" y="78.74"/>
@@ -11627,8 +11627,8 @@ http://www.jst-mfg.com&lt;p&gt;
 <instance part="C15" gate="G$1" x="284.48" y="172.72"/>
 <instance part="U$1" gate="G$1" x="276.86" y="195.58"/>
 <instance part="GND7" gate="1" x="276.86" y="157.48"/>
-<instance part="CN1" gate="P1" x="233.68" y="165.1"/>
-<instance part="CN1" gate="P2" x="233.68" y="187.96"/>
+<instance part="CN1" gate="P1" x="170.18" y="241.3" rot="MR0"/>
+<instance part="CN1" gate="P2" x="170.18" y="264.16" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -11690,10 +11690,10 @@ http://www.jst-mfg.com&lt;p&gt;
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="Q3" gate="G$1" pin="D"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="200.66" y1="165.1" x2="195.58" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="165.1" x2="195.58" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="241.3" x2="200.66" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="S"/>
+<wire x1="195.58" y1="241.3" x2="200.66" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -11819,13 +11819,13 @@ http://www.jst-mfg.com&lt;p&gt;
 </net>
 <net name="AGND" class="0">
 <segment>
-<pinref part="Q3" gate="G$1" pin="S"/>
-<wire x1="210.82" y1="165.1" x2="218.44" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="165.1" x2="228.6" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="241.3" x2="175.26" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="AGND1" gate="VR1" pin="AGND"/>
-<wire x1="218.44" y1="160.02" x2="218.44" y2="165.1" width="0.1524" layer="91"/>
-<junction x="218.44" y="165.1"/>
+<wire x1="177.8" y1="238.76" x2="177.8" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="CN1" gate="P1" pin="1"/>
+<pinref part="Q3" gate="G$1" pin="D"/>
+<wire x1="185.42" y1="241.3" x2="177.8" y2="241.3" width="0.1524" layer="91"/>
+<junction x="177.8" y="241.3"/>
 </segment>
 </net>
 <net name="SWDCLK" class="0">
@@ -11856,7 +11856,7 @@ http://www.jst-mfg.com&lt;p&gt;
 <segment>
 <pinref part="Q3" gate="G$1" pin="G"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="172.72" x2="205.74" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="248.92" x2="190.5" y2="251.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MIC_BYPASS" class="0">
@@ -11869,19 +11869,10 @@ http://www.jst-mfg.com&lt;p&gt;
 </net>
 <net name="VBAT" class="0">
 <segment>
-<wire x1="228.6" y1="187.96" x2="205.74" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="187.96" x2="205.74" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="187.96" x2="205.74" y2="185.42" width="0.1524" layer="91"/>
-<junction x="205.74" y="187.96"/>
-<pinref part="U$2" gate="G$1" pin="VBAT"/>
-<pinref part="CN1" gate="P2" pin="1"/>
-</segment>
-<segment>
 <pinref part="U3" gate="A" pin="IN"/>
 <wire x1="241.3" y1="264.16" x2="236.22" y2="264.16" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="264.16" x2="220.98" y2="264.16" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="264.16" x2="220.98" y2="266.7" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="264.16" x2="220.98" y2="271.78" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="261.62" x2="220.98" y2="264.16" width="0.1524" layer="91"/>
 <junction x="220.98" y="264.16"/>
@@ -11890,6 +11881,14 @@ http://www.jst-mfg.com&lt;p&gt;
 <wire x1="236.22" y1="259.08" x2="236.22" y2="264.16" width="0.1524" layer="91"/>
 <junction x="236.22" y="264.16"/>
 <pinref part="U$3" gate="G$1" pin="VBAT"/>
+<wire x1="220.98" y1="264.16" x2="190.5" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="264.16" x2="190.5" y2="264.16" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="190.5" y1="264.16" x2="190.5" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="264.16" x2="190.5" y2="261.62" width="0.1524" layer="91"/>
+<junction x="190.5" y="264.16"/>
+<pinref part="U$2" gate="G$1" pin="VBAT"/>
+<pinref part="CN1" gate="P2" pin="1"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
